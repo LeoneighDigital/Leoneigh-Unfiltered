@@ -36,8 +36,12 @@ function renderInquiry() {
           '<label for="f-specs">[03] TIMELINE & SPECIFICATIONS</label>' +
           '<textarea id="f-specs" name="specs" placeholder="Timeline, deliverables, creative brief summary" required></textarea>' +
         '</div>' +
-        '<button type="submit" class="form-submit">SUBMIT INQUIRY &rarr;</button>' +
-        '<div class="form-msg" id="inquiry-msg"></div>' +
+        '<div class="form-field">' +
+          '<div class="form-field-label">EMAIL PREVIEW</div>' +
+          '<pre class="form-preview" id="inquiry-preview" aria-label="Inquiry email preview"></pre>' +
+        '</div>' +
+        '<a class="form-submit" id="inquiry-mail" href="mailto:LeoneighDigital@gmail.com">SEND INQUIRY &rarr;</a>' +
+        '<div class="form-msg" id="inquiry-msg" aria-live="polite"></div>' +
       '</form>' +
     '</section>' +
     '<section class="section">' +
@@ -50,21 +54,60 @@ function renderInquiry() {
 
   var form = document.getElementById('inquiry-form');
   var msg = document.getElementById('inquiry-msg');
+  var preview = document.getElementById('inquiry-preview');
+  var mailLink = document.getElementById('inquiry-mail');
+
+  function buildRequest() {
+    var name = form.querySelector('#f-name').value.trim() || '—';
+    var type = form.querySelector('#f-type').value || '—';
+    var specs = form.querySelector('#f-specs').value.trim() || '—';
+    var subject = 'Creative inquiry: ' + type;
+    var body = [
+      'Hello Leoneigh Unfiltered,',
+      '',
+      'I would like to discuss a creative project.',
+      '',
+      'PROJECT',
+      'Name / studio / handle: ' + name,
+      'Project type: ' + type,
+      'Timeline & specifications: ' + specs,
+      '',
+      'Thank you,',
+      name === '—' ? '' : name
+    ].join('\n');
+
+    return { subject: subject, body: body };
+  }
+
+  function refreshPreview() {
+    var request = buildRequest();
+    preview.textContent = request.subject + '\n\n' + request.body;
+    mailLink.href = 'mailto:LeoneighDigital@gmail.com?subject=' +
+      encodeURIComponent(request.subject) + '&body=' +
+      encodeURIComponent(request.body);
+  }
+
   if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
+    form.querySelectorAll('input, select, textarea').forEach(function (field) {
+      field.addEventListener('input', refreshPreview);
+      field.addEventListener('change', refreshPreview);
+    });
+
+    mailLink.addEventListener('click', function (e) {
       var name = form.querySelector('#f-name').value.trim();
       var type = form.querySelector('#f-type').value;
       var specs = form.querySelector('#f-specs').value.trim();
       if (!name || !type || !specs) {
+        e.preventDefault();
         msg.className = 'form-msg error';
-        msg.textContent = 'All fields are required for dispatch.';
+        msg.textContent = 'Complete all fields before opening your email draft.';
+        form.querySelector(!name ? '#f-name' : !type ? '#f-type' : '#f-specs').focus();
         return;
       }
-      openEmailDraft(
-        'Creative inquiry: ' + type,
-        'Name / studio / handle: ' + name + '\nProject type: ' + type + '\nTimeline & specifications: ' + specs
-      );
+      refreshPreview();
+      msg.textContent = '';
     });
+
+    refreshPreview();
   }
 }
