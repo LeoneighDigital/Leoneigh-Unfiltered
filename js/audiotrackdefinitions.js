@@ -46,7 +46,7 @@ var TRACKS = [
     title: 'Raw Belt Resonance Drill',
     key: 'Eb Minor',
     range: 'G3 - C5',
-    bpm: '—',
+    bpm: '112',
     duration: 8,
     wave: 'sawtooth',
     filter: 1400,
