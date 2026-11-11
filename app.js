@@ -506,3 +506,4 @@ MotionTerminal.prototype.destroy = function () {
   if (this.rafId) { cancelAnimationFrame(this.rafId); this.rafId = null; }
   if (this._onResize) window.removeEventListener('resize', this._onResize);
 };
+
