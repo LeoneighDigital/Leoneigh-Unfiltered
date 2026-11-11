@@ -135,6 +135,8 @@ img, video { display: block; max-width: 100%; }
   padding: 0 var(--pad);
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: relative;
   height: 44px;
   gap: 0;
 }
@@ -164,8 +166,10 @@ img, video { display: block; max-width: 100%; }
   background: var(--tx-b);
 }
 .nav-link:first-child.active::after { left: 0; }
-.nav-spacer { flex: 1; }
+.nav-spacer { display: none; }
 .nav-system {
+  position: absolute;
+  right: var(--pad);
   font-size: 9px;
   letter-spacing: 0.08em;
   color: var(--tx-d);
