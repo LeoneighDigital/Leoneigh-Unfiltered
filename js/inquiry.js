@@ -61,8 +61,6 @@ function renderInquiry() {
         msg.textContent = 'All fields are required for dispatch.';
         return;
       }
-      msg.className = 'form-msg';
-      msg.textContent = 'Opening an email draft to LeoneighDigital@gmail.com.';
       openEmailDraft(
         'Creative inquiry: ' + type,
         'Name / studio / handle: ' + name + '\nProject type: ' + type + '\nTimeline & specifications: ' + specs

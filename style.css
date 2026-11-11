@@ -667,6 +667,12 @@ img, video { display: block; max-width: 100%; }
   letter-spacing: 0.02em;
   min-height: 1em;
 }
+.form-msg a {
+  color: var(--tx-b);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.form-msg a:hover { color: var(--accent-soft); }
 .form-msg.error { color: var(--tx-m); }
 .form-msg.success { color: var(--tx-b); }
 
