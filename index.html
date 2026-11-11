@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leoneigh Unfiltered // Creative Laboratory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="#/" class="brand">
+        <span class="brand-badge">LU</span>
+        <span class="brand-text">LEONEIGH UNFILTERED <span>// CREATIVE LABORATORY</span></span>
+      </a>
+      <div class="status-stamp">
+        <span>STATUS: <span class="status-dot"></span> ACTIVE</span>
+        <span class="sep">//</span>
+        <span>PRETORIA, ZA</span>
+        <span class="sep">//</span>
+        <span>[LU-SYS.002]</span>
+        <span class="sep">//</span>
+        <span id="clock">00:00:00 UTC</span>
+      </div>
+      <a href="#/inquiry" class="sibling-link"><span class="bracket">[</span>LD<span class="bracket">]</span> LEONEIGH DIGITAL</a>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       NAV
+       ============================================================ -->
+  <nav id="site-nav">
+    <div class="nav-inner">
+      <a href="#/" class="nav-link" data-route="/">INDEX</a>
+      <a href="#/vocals" class="nav-link" data-route="/vocals">VOCALS</a>
+      <a href="#/movement" class="nav-link" data-route="/movement">MOVEMENT</a>
+      <a href="#/inquiry" class="nav-link" data-route="/inquiry">INQUIRY</a>
+      <span class="nav-spacer"></span>
+      <span class="nav-system">SYS.002 // REV.04</span>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       MAIN APP (rendered by JS)
+       ============================================================ -->
+  <main id="app"></main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <span>LEONEIGH UNFILTERED // CREATIVE LABORATORY</span>
+      <span>For software architecture, custom audio systems, and web infrastructure, visit <a href="#/inquiry">Leoneigh Digital</a>.</span>
+      <span>[LU-SYS.002]</span>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       MODAL: STEM DISPATCH
+       ============================================================ -->
+  <div class="modal-backdrop" id="modal-stems">
+    <div class="modal">
+      <span class="modal-close" data-close-modal>&times;</span>
+      <div class="modal-title">REQUEST 24-BIT / 48kHz WAV STEMS</div>
+      <div class="modal-desc">Enter your email or studio handle. Stems are dispatched as uncompressed 24-bit / 48kHz WAV files for production and remix use.</div>
+      <form id="stems-form" class="form" style="gap:14px;">
+        <div class="form-field">
+          <label for="stems-email">EMAIL / STUDIO HANDLE</label>
+          <input type="text" id="stems-email" placeholder="name@studio.com" required autocomplete="email">
+        </div>
+        <div class="form-field">
+          <label for="stems-note">PROJECT CONTEXT (OPTIONAL)</label>
+          <input type="text" id="stems-note" placeholder="Remix / Production / Sync">
+        </div>
+        <button type="submit" class="form-submit">DISPATCH STEMS &rarr;</button>
+        <div class="form-msg" id="stems-msg"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
