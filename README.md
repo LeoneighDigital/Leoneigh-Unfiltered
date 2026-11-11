@@ -36,27 +36,29 @@ All pages are rendered client-side. The application shell, header, navigation, f
 
 ```
 /
-├── index.html   Static shell: header, nav, main, footer, stems modal
-├── style.css    All styling and responsive rules
-└── app.js       Utilities, audio engine, motion terminal, page renderers, router
+├── index.html
+├── style.css
+├── assets/
+│   └── LeoneighUnfiltered.jpg
+└── js/
+    ├── app.js                    Utilities, shared audio context, router
+    ├── audiotrackdefinitions.js  Track data and generated note sequences
+    ├── Hub.js                    Hub page renderer
+    ├── inquiry.js                Inquiry page renderer
+    ├── modalhelpers.js           Modal and stem form handlers
+    ├── motionterminal.js         Canvas motion terminal
+    ├── movement.js               Movement page renderer
+    ├── stemplayer.js             Web Audio stem player
+    └── vocals.js                 Vocals page renderer
 ```
 
-`app.js` is organized into clear sections:
-
-1. Utilities and cleanup registry
-2. Shared AudioContext
-3. `StemPlayer` class
-4. `MotionTerminal` class and canvas drawing
-5. Audio track definitions
-6. Modal helpers and stems form
-7. Page renderers: `renderHub`, `renderVocals`, `renderMovement`, `renderInquiry`
-8. Router and bootstrap
+The scripts are loaded in dependency order from `index.html`; `app.js` loads last so all page renderers are defined before the router initializes.
 
 Each page renderer injects its own markup, instantiates its own players and terminals, and registers cleanup handlers via `registerCleanup`. The router calls `runCleanups()` before mounting the next page.
 
 ## Running Locally
 
-No build step is required. Serve the three files from any static server:
+No build step is required. Serve the project directory from any static server:
 
 ```bash
 # Python 3
