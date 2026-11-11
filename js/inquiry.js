@@ -44,7 +44,7 @@ function renderInquiry() {
       '<div class="section-label">SISTER STUDIO BRIDGE</div>' +
       '<div class="ld-bridge">' +
         '<span class="ld-bridge-label">LOOKING FOR SOFTWARE ARCHITECTURE OR CLIENT VAULTS?</span>' +
-        '<a href="https://leoneighdigital.github.io/leoneigh-digital/index.html" class="ld-bridge-link" data-ld-link><span class="bracket">[</span>LD<span class="bracket">]</span> LEONEIGH DIGITAL &mdash; Fixed retainers for commercial production houses <span class="arrow">&rarr;</span></a>' +
+        '<a href="https://leoneighdigital.github.io/leoneigh-digital/index.html" class="ld-bridge-link" target="_blank" rel="noopener noreferrer"><span class="bracket">[</span>LD<span class="bracket">]</span> LEONEIGH DIGITAL &mdash; Fixed retainers for commercial production houses <span class="arrow">&rarr;</span></a>' +
       '</div>' +
     '</section>';
 
@@ -64,15 +64,6 @@ function renderInquiry() {
       msg.className = 'form-msg success';
       msg.textContent = 'Inquiry received. Protocol response within 48 hours.';
       form.reset();
-    });
-  }
-
-  var ldLink = app.querySelector('[data-ld-link]');
-  if (ldLink) {
-    ldLink.addEventListener('click', function (e) {
-      e.preventDefault();
-      msg.className = 'form-msg';
-      msg.textContent = 'Redirecting to Leoneigh Digital...';
     });
   }
 }
