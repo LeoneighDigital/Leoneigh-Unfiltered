@@ -7,6 +7,12 @@ function openModal(id) {
   if (el) el.classList.add('open');
 }
 
+function openEmailDraft(subject, body) {
+  var mailto = 'mailto:LeoneighDigital@gmail.com?subject=' +
+    encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  window.location.href = mailto;
+}
+
 document.addEventListener('click', function (e) {
   var closeBtn = e.target.closest('[data-close-modal]');
   if (closeBtn) {
@@ -31,8 +37,12 @@ document.addEventListener('DOMContentLoaded', function () {
       msg.textContent = 'Email or studio handle required.';
       return;
     }
-    msg.className = 'form-msg success';
-    msg.textContent = 'Stem dispatch request received. Check your inbox.';
-    form.reset();
+    var note = form.querySelector('#stems-note').value.trim();
+    msg.className = 'form-msg';
+    msg.textContent = 'Opening an email draft to LeoneighDigital@gmail.com.';
+    openEmailDraft(
+      'Stem dispatch request',
+      'Email / studio handle: ' + email + '\nProject context: ' + (note || 'Not provided')
+    );
   });
 });

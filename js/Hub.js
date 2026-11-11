@@ -83,7 +83,7 @@ function renderHub() {
       '<a href="#/inquiry" class="btn">OPEN DISPATCH FORM <span class="arrow">&rarr;</span></a>' +
       '<div class="ld-bridge">' +
         '<span class="ld-bridge-label">FOR SOFTWARE ARCHITECTURE, CUSTOM AUDIO SYSTEMS, AND WEB INFRASTRUCTURE:</span>' +
-        '<a href="https://leoneighdigital.github.io/leoneigh-digital/index.html" class="ld-bridge-link" target="_blank" rel="noopener noreferrer"><span class="bracket">[</span>LD<span class="bracket">]</span> LEONEIGH DIGITAL <span class="arrow">&rarr;</span></a>' +
+        '<a href="https://leoneighdigital.github.io/leoneigh-digital/" class="ld-bridge-link"><span class="bracket">[</span>LD<span class="bracket">]</span> LEONEIGH DIGITAL <span class="arrow">&rarr;</span></a>' +
       '</div>' +
     '</section>';
 
