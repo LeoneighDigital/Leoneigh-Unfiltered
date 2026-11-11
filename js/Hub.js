@@ -49,19 +49,19 @@ function renderHub() {
     '<section class="section" id="dispatch">' +
       '<div class="section-label">[04] // SATELLITE DISPATCH</div>' +
       '<div class="sat-list">' +
-        '<a href="#" class="sat-item" data-external="tiktok">' +
+        '<a href="https://www.tiktok.com/@leoneigh.unfilter?is_from_webapp=1&sender_device=pc" class="sat-item" data-external="tiktok">' +
           '<span class="sat-badge">[TT]</span>' +
           '<span class="sat-name">TikTok</span>' +
           '<span class="sat-desc">Raw rehearsal clips, micro-drills, and progress snippets.</span>' +
           '<span class="sat-arrow">&rarr;</span>' +
         '</a>' +
-        '<a href="#" class="sat-item" data-external="instagram">' +
+        '<a href="https://www.instagram.com/leoneighunfiltered/" class="sat-item" data-external="instagram">' +
           '<span class="sat-badge">[IG]</span>' +
           '<span class="sat-name">Instagram</span>' +
           '<span class="sat-desc">Curated visual catalog, movement stills, and aesthetic moodboards.</span>' +
           '<span class="sat-arrow">&rarr;</span>' +
         '</a>' +
-        '<a href="#" class="sat-item" data-external="youtube">' +
+        '<a href="https://www.youtube.com/channel/UCvdi1iA8mTj16d0GA8U1zpQ" class="sat-item" data-external="youtube">' +
           '<span class="sat-badge">[YT]</span>' +
           '<span class="sat-name">YouTube</span>' +
           '<span class="sat-desc">Full-length choreography rehearsals and uncompressed audio archives.</span>' +
