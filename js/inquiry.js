@@ -48,8 +48,13 @@ function renderInquiry() {
       '<div class="section-label">SISTER STUDIO BRIDGE</div>' +
       '<div class="ld-bridge">' +
         '<span class="ld-bridge-label">LOOKING FOR SOFTWARE ARCHITECTURE OR CLIENT VAULTS?</span>' +
-        '<a href="https://leoneighdigital.github.io/leoneigh-digital/" class="ld-bridge-link"><span class="bracket">[</span>LD<span class="bracket">]</span> LEONEIGH DIGITAL &mdash; Fixed retainers for commercial production houses <span class="arrow">&rarr;</span></a>' +
+        '<a href="https://leoneighdigital.github.io/leoneigh-digital/" target="_blank" rel="noopener noreferrer" class="ld-bridge-link"><span class="bracket">[</span>LD<span class="bracket">]</span> LEONEIGH DIGITAL &mdash; Systems &amp; Infrastructure <span class="arrow">&#8599;</span></a>' +
       '</div>' +
+    '</section>' +
+    '<section class="section">' +
+      '<div class="section-label">DIRECT DISPATCH</div>' +
+      '<div class="section-sub">Prefer to bypass the form? Open a pre-addressed dispatch draft:</div>' +
+      '<a class="btn" href="mailto:LeoneighDigital@gmail.com?subject=%5BLU%20DISPATCH%5D%20Creative%20Collaboration%20Inquiry">INITIATE INQUIRY // DISPATCH <span class="arrow">&rarr;</span></a>' +
     '</section>';
 
   var form = document.getElementById('inquiry-form');
