@@ -1,4 +1,3 @@
-
 /* ============================================================
    MODAL HELPERS
    ============================================================ */
@@ -7,10 +6,15 @@ function openModal(id) {
   if (el) el.classList.add('open');
 }
 
+function closeModal(id) {
+  var el = document.getElementById(id);
+  if (el) el.classList.remove('open');
+}
+
 function openEmailDraft(subject, body) {
-  var draftUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=' +
-    encodeURIComponent('LeoneighDigital@gmail.com') + '&su=' +
-    encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  var draftUrl = 'mailto:LeoneighDigital@gmail.com' +
+    '?subject=' + encodeURIComponent(subject) +
+    '&body=' + encodeURIComponent(body);
   window.location.href = draftUrl;
 }
 
@@ -40,8 +44,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     var note = form.querySelector('#stems-note').value.trim();
     openEmailDraft(
-      'Stem dispatch request',
+      '[LU DISPATCH] Stem Request',
       'Email / studio handle: ' + email + '\nProject context: ' + (note || 'Not provided')
     );
+    msg.className = 'form-msg success';
+    msg.textContent = 'Dispatching draft to your mail client...';
+    setTimeout(function () { closeModal('modal-stems'); msg.textContent = ''; }, 1200);
   });
 });
