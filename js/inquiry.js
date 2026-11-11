@@ -44,7 +44,7 @@ function renderInquiry() {
       '<div class="section-label">SISTER STUDIO BRIDGE</div>' +
       '<div class="ld-bridge">' +
         '<span class="ld-bridge-label">LOOKING FOR SOFTWARE ARCHITECTURE OR CLIENT VAULTS?</span>' +
-        '<a href="#" class="ld-bridge-link" data-ld-link><span class="bracket">[</span>LD<span class="bracket">]</span> LEONEIGH DIGITAL &mdash; Fixed retainers for commercial production houses <span class="arrow">&rarr;</span></a>' +
+        '<a href="https://leoneighdigital.github.io/leoneigh-digital/index.html" class="ld-bridge-link" data-ld-link><span class="bracket">[</span>LD<span class="bracket">]</span> LEONEIGH DIGITAL &mdash; Fixed retainers for commercial production houses <span class="arrow">&rarr;</span></a>' +
       '</div>' +
     '</section>';
 
