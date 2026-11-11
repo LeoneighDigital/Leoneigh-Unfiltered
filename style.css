@@ -42,6 +42,21 @@ canvas { display: block; }
 img, video { display: block; max-width: 100%; }
 
 /* ============================================================
+   PRODUCTION SCROLLBARS
+   ============================================================ */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #262626 #0d0d0d;
+}
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #0d0d0d; }
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: #5a1024; }
+
+/* ============================================================
    HEADER
    ============================================================ */
 #site-header {
@@ -119,6 +134,11 @@ img, video { display: block; max-width: 100%; }
 }
 .sibling-link:hover { color: var(--tx-b); }
 .sibling-link .bracket { color: var(--tx-d); }
+.sibling-link .arrow {
+  color: var(--tx-d);
+  font-size: 10px;
+  margin-left: 2px;
+}
 
 /* ============================================================
    NAV
@@ -841,7 +861,8 @@ img, video { display: block; max-width: 100%; }
   :root { --pad: 20px; }
   .rep-grid { grid-template-columns: 1fr; }
   .header-inner { flex-wrap: wrap; height: auto; padding-top: 10px; padding-bottom: 10px; gap: 8px; }
-  .status-stamp { font-size: 9px; }
+  .status-stamp { font-size: 9px; gap: 6px; }
+  .hide-sm { display: none; }
   .sibling-link { font-size: 9px; }
   .nav-inner { overflow-x: auto; scrollbar-width: none; }
   .nav-inner::-webkit-scrollbar { display: none; }
@@ -858,6 +879,8 @@ img, video { display: block; max-width: 100%; }
   body { font-size: 12px; }
   .section { padding: 40px 0; }
   .terminal-meta { gap: 8px; font-size: 8px; }
+  .status-stamp { font-size: 8px; gap: 5px; }
+  .sibling-link .arrow { display: none; }
   .stem-dispatch { flex-direction: column; align-items: flex-start; }
   .ld-bridge { flex-direction: column; align-items: flex-start; }
   .terminal-controls { gap: 8px; padding: 8px 10px; }
