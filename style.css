@@ -71,8 +71,15 @@ img, video { display: block; max-width: 100%; }
 .brand-logo {
   width: 34px;
   height: 34px;
-  object-fit: cover;
+  overflow: hidden;
   flex-shrink: 0;
+}
+.brand-logo img {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(2.4);
 }
 .brand-text { color: var(--tx-b); font-weight: 600; }
 .brand-text span { color: var(--tx-d); font-weight: 400; }
