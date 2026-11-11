@@ -53,9 +53,9 @@ function getPose(elapsed, cycleDur) {
 
 function drawFrame(ctx, W, H, t, opts) {
   opts = opts || {};
-  var accent = opts.accent || '#d8d8d8';
-  var gridCol = opts.grid || '#141414';
-  var bg = opts.bg || '#0a0a0a';
+  var accent = opts.accent || '#7f1d1d';
+  var gridCol = opts.grid || '#27272a';
+  var bg = opts.bg || '#09090b';
 
   ctx.fillStyle = bg;
   ctx.fillRect(0, 0, W, H);
@@ -232,7 +232,7 @@ MotionTerminal.prototype._startLoop = function () {
       self._renderProgress();
     }
     drawFrame(self.ctx2d, self.W, self.H, self.elapsed, {
-      accent: self.opts.accent || '#d8d8d8',
+      accent: self.opts.accent || '#7f1d1d',
       cycle: self.opts.cycle || 6
     });
     self.rafId = requestAnimationFrame(loop);

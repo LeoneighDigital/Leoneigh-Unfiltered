@@ -2,17 +2,20 @@
    TOKENS
    ============================================================ */
 :root {
-  --bg: #070707;
-  --s1: #0c0c0c;
-  --s2: #111111;
-  --s3: #161616;
-  --bd: #1a1a1a;
-  --bd2: #242424;
-  --bd3: #333333;
-  --tx: #b4b4b4;
-  --tx-d: #555555;
-  --tx-m: #777777;
-  --tx-b: #e6e6e6;
+  --bg: #09090b;
+  --s1: #121215;
+  --s2: #18181b;
+  --s3: #1f1f23;
+  --bd: #27272a;
+  --bd2: #3f3f46;
+  --bd3: #52525b;
+  --accent: #7f1d1d;
+  --accent-soft: #991b1b;
+  --accent-dim: #450a0a;
+  --tx: #e4e4e7;
+  --tx-d: #52525b;
+  --tx-m: #a1a1aa;
+  --tx-b: #e4e4e7;
   --tx-w: #ffffff;
   --mono: 'SF Mono', 'Cascadia Code', 'Fira Code', 'JetBrains Mono', 'Courier New', monospace;
   --max: 1180px;
@@ -31,7 +34,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
-::selection { background: #333; color: #fff; }
+::selection { background: var(--accent-dim); color: var(--tx-w); }
 a { color: inherit; text-decoration: none; }
 button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
 input, textarea, select { font-family: inherit; font-size: inherit; }
@@ -45,7 +48,7 @@ img, video { display: block; max-width: 100%; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(7, 7, 7, 0.92);
+  background: rgba(9, 9, 11, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--bd);
@@ -97,7 +100,7 @@ img, video { display: block; max-width: 100%; }
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: var(--tx-b);
+  background: var(--accent-soft);
   animation: pulse 2.4s ease-in-out infinite;
 }
 @keyframes pulse {
@@ -124,7 +127,7 @@ img, video { display: block; max-width: 100%; }
   position: sticky;
   top: 48px;
   z-index: 99;
-  background: rgba(7, 7, 7, 0.92);
+  background: rgba(9, 9, 11, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--bd);
@@ -163,7 +166,7 @@ img, video { display: block; max-width: 100%; }
   left: 0;
   right: 0;
   height: 1px;
-  background: var(--tx-b);
+  background: var(--accent);
 }
 .nav-link:first-child.active::after { left: 0; }
 .nav-spacer { display: none; }
@@ -234,7 +237,7 @@ img, video { display: block; max-width: 100%; }
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: #0a0a0a;
+  background: var(--bg);
   overflow: hidden;
 }
 .terminal-canvas-wrap canvas {
@@ -275,13 +278,13 @@ img, video { display: block; max-width: 100%; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(7,7,7,0.6);
+  background: rgba(9,9,11,0.6);
   cursor: pointer;
   transition: border-color 0.2s, background 0.2s;
 }
 .terminal-play-large:hover {
   border-color: rgba(255,255,255,0.35);
-  background: rgba(7,7,7,0.8);
+  background: rgba(9,9,11,0.8);
 }
 .terminal-play-large .icon-play { margin-left: 3px; }
 
@@ -303,7 +306,7 @@ img, video { display: block; max-width: 100%; }
   border: 1px solid transparent;
   transition: border-color 0.2s;
 }
-.tc-btn:hover { border-color: var(--bd2); }
+.tc-btn:hover { border-color: var(--accent-soft); }
 .tc-progress {
   flex: 1;
   height: 20px;
@@ -320,7 +323,7 @@ img, video { display: block; max-width: 100%; }
 }
 .tc-fill {
   height: 100%;
-  background: var(--tx-b);
+  background: var(--accent-soft);
   width: 0%;
   position: absolute;
   top: 0;
@@ -418,7 +421,7 @@ img, video { display: block; max-width: 100%; }
   justify-content: center;
   transition: border-color 0.2s;
 }
-.stem-play:hover { border-color: var(--bd3); }
+.stem-play:hover { border-color: var(--accent-soft); }
 .stem-info { flex: 1; min-width: 0; }
 .stem-id {
   font-size: 8px;
@@ -452,7 +455,7 @@ img, video { display: block; max-width: 100%; }
 }
 .stem-scrubber-fill {
   height: 100%;
-  background: var(--tx-b);
+  background: var(--accent-soft);
   width: 0%;
   position: absolute;
   top: 0;
@@ -506,7 +509,7 @@ img, video { display: block; max-width: 100%; }
   transition: border-color 0.2s, background 0.2s;
   white-space: nowrap;
 }
-.btn:hover { border-color: var(--bd3); background: var(--s2); }
+.btn:hover { border-color: var(--accent-soft); background: var(--s2); }
 .btn .arrow { color: var(--tx-d); }
 
 /* ============================================================
@@ -633,7 +636,7 @@ img, video { display: block; max-width: 100%; }
 .form-field input:focus,
 .form-field textarea:focus,
 .form-field select:focus {
-  border-color: var(--bd3);
+  border-color: var(--accent-soft);
 }
 .form-field input::placeholder,
 .form-field textarea::placeholder {
@@ -657,7 +660,7 @@ img, video { display: block; max-width: 100%; }
   color: var(--tx-w);
   transition: background 0.2s, border-color 0.2s;
 }
-.form-submit:hover { background: var(--s2); border-color: var(--tx-d); }
+.form-submit:hover { background: var(--s2); border-color: var(--accent-soft); }
 .form-msg {
   font-size: 10px;
   color: var(--tx-m);

@@ -32,7 +32,7 @@ function renderMovement() {
       label: 'STUDY 01',
       meta: '<span class="meta-item">DRILL: <span class="val">45s</span></span><span class="meta-item">SPRINT BPM: <span class="val">104</span></span>',
       cycle: 4.2,
-      accent: '#d8d8d8',
+      accent: '#7f1d1d',
       duration: 45
     },
     {
@@ -40,7 +40,7 @@ function renderMovement() {
       label: 'STUDY 02',
       meta: '<span class="meta-item">DRILL: <span class="val">45s</span></span><span class="meta-item">FOCUS: <span class="val">Floor transitions</span></span>',
       cycle: 5.5,
-      accent: '#c8c8c8',
+      accent: '#991b1b',
       duration: 45
     },
     {
@@ -48,7 +48,7 @@ function renderMovement() {
       label: 'STUDY 03',
       meta: '<span class="meta-item">FULL ROUTINE: <span class="val">Single take // unedited</span></span><span class="meta-item">SPRINT BPM: <span class="val">104</span></span>',
       cycle: 7.2,
-      accent: '#e0e0e0',
+      accent: '#7f1d1d',
       duration: 90
     }
   ];

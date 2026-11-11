@@ -95,7 +95,7 @@ function renderHub() {
           '<span class="meta-item">SPRINT BPM: <span class="val">104</span></span>' +
           '<span class="meta-item">FOCUS: <span class="val">Hip hinge // weight shifts</span></span>',
     cycle: 6,
-    accent: '#d8d8d8'
+    accent: '#7f1d1d'
   });
   registerCleanup(function () { hero.destroy(); });
 
