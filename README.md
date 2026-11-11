@@ -83,14 +83,6 @@ Targets current versions of Chrome, Firefox, Safari, and Edge. Requires:
 
 No polyfills are included.
 
-## Customization
-
-- **Colors and spacing:** edit the CSS custom properties in `:root` in `style.css`.
-- **Audio tracks:** edit the `TRACKS` array in `app.js`. Each track requires `id`, `title`, `key`, `range`, `bpm`, `duration`, `wave`, `filter`, and a `notes` array of `{ t, f, d, a }` objects.
-- **Motion studies:** edit the `studies` array in `renderMovement()` and the `POSES` array for skeleton keyframes.
-- **Hero cut:** adjust the `MotionTerminal` options in `renderHub()`.
-- **Navigation and metadata:** edit the static header, nav, and footer in `index.html`.
-
 ## Constraints
 
 - No external fonts, libraries, analytics, or third-party embeds.
