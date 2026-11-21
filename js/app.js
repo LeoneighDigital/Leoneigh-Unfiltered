@@ -53,6 +53,7 @@ var routes = {
   '/': renderHub,
   '/vocals': renderVocals,
   '/movement': renderMovement,
+  '/channels': renderChannels,
   '/inquiry': renderInquiry
 };
 
@@ -81,4 +82,19 @@ window.addEventListener('hashchange', navigate);
 window.addEventListener('DOMContentLoaded', function () {
   if (!window.location.hash) window.location.hash = '#/';
   navigate();
+});
+
+/* ============================================================
+   SMOOTH-SCROLL ANCHORS (data-scroll)
+   Kept separate from hash routing so in-page jumps never
+   collide with the SPA router.
+   ============================================================ */
+document.addEventListener('click', function (e) {
+  var trigger = e.target.closest('[data-scroll]');
+  if (!trigger) return;
+  var targetId = trigger.getAttribute('data-scroll');
+  var target = document.getElementById(targetId);
+  if (!target) return;
+  e.preventDefault();
+  target.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
