@@ -1110,4 +1110,5 @@ html {
   .terminal-meta { gap: 8px; font-size: 8px; }
   .status-stamp { font-size: 8px; gap: 5px; }
   .sibling-link .arrow { display: none; }
-  .stem-dispatch { flex-direction: column; align
+  .stem-dispatch { flex-direction: column; align-items: flex-start; }
+}
