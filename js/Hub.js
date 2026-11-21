@@ -18,7 +18,7 @@ function renderHub() {
       '<div class="stem-list" id="hub-stems"></div>' +
       '<div class="stem-dispatch">' +
         '<span class="stem-dispatch-text">Production stems available on request. 24-bit / 48kHz WAV.</span>' +
-        '<button class="btn" data-stems>REQUEST STEMS <span class="arrow">&rarr;</span></button>' +
+        '<a class="btn" href="https://leoneighdigital.github.io/sync-vault/" target="_blank" rel="noopener noreferrer">REQUEST STEMS <span class="arrow">&rarr;</span></a>' +
       '</div>' +
     '</section>' +
 
@@ -110,7 +110,4 @@ function renderHub() {
     registerCleanup(function () { p.destroy(); });
   });
 
-  // Stems modal trigger
-  var stemsBtn = app.querySelector('[data-stems]');
-  if (stemsBtn) stemsBtn.addEventListener('click', function () { openModal('modal-stems'); });
 }

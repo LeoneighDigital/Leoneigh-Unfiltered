@@ -15,7 +15,7 @@ function renderVocals() {
       '<div class="stem-list" id="vocals-stems"></div>' +
       '<div class="stem-dispatch">' +
         '<span class="stem-dispatch-text">Request 24-bit / 48kHz WAV stems for production and remixes.</span>' +
-        '<button class="btn" data-stems>REQUEST STEMS <span class="arrow">&rarr;</span></button>' +
+        '<a class="btn" href="https://leoneighdigital.github.io/sync-vault/" target="_blank" rel="noopener noreferrer">REQUEST STEMS <span class="arrow">&rarr;</span></a>' +
       '</div>' +
     '</section>' +
     '<section class="section">' +
@@ -34,6 +34,4 @@ function renderVocals() {
     registerCleanup(function () { p.destroy(); });
   });
 
-  var stemsBtn = app.querySelector('[data-stems]');
-  if (stemsBtn) stemsBtn.addEventListener('click', function () { openModal('modal-stems'); });
 }
