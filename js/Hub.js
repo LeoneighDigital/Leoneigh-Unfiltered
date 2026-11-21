@@ -4,8 +4,31 @@
 function renderHub() {
   var app = document.getElementById('app');
   app.innerHTML =
+    // [00] SYSTEM INITIALIZATION
+    '<section class="section section-hero" id="system-init">' +
+      '<div class="section-label">[00] // SYSTEM INITIALIZATION</div>' +
+      '<div class="hero">' +
+        '<div class="hero-status">' +
+          '<span>SYS.INIT // LEONEIGH UNFILTERED</span>' +
+          '<span class="sep">&middot;</span>' +
+          '<span>EST. 2026</span>' +
+          '<span class="sep">&middot;</span>' +
+          '<span>PRETORIA / GAUTENG [UTC+2]</span>' +
+        '</div>' +
+        '<h1 class="hero-title">' +
+          '<span class="hero-title-main">LEONEIGH UNFILTERED</span>' +
+          '<span class="hero-title-sub">// CREATIVE LABORATORY</span>' +
+        '</h1>' +
+        '<p class="hero-manifesto">Multidisciplinary creative laboratory documenting vocal mechanics, street choreography, sonic production, and sartorial direction. Built in public&mdash;uncompressed, process-first, zero commercial filler.</p>' +
+        '<div class="hero-actions">' +
+          '<a href="#screening-terminal" class="btn-primary" data-scroll="screening-terminal">ENTER ARCHIVE &darr;</a>' +
+          '<a href="#/channels" class="btn-ghost">SATELLITE CHANNELS &rarr;</a>' +
+        '</div>' +
+      '</div>' +
+    '</section>' +
+
     // [01] SCREENING TERMINAL
-    '<section class="section" id="terminal">' +
+    '<section class="section" id="screening-terminal">' +
       '<div class="section-label">[01] // SCREENING TERMINAL</div>' +
       '<div class="terminal" id="hero-terminal"></div>' +
     '</section>' +
@@ -18,18 +41,18 @@ function renderHub() {
       '<div class="stem-list" id="hub-stems"></div>' +
       '<div class="stem-dispatch">' +
         '<span class="stem-dispatch-text">Production stems available on request. 24-bit / 48kHz WAV.</span>' +
-        '<a class="btn" href="https://leoneighdigital.github.io/sync-vault/" target="_blank" rel="noopener noreferrer">REQUEST STEMS <span class="arrow">&rarr;</span></a>' +
+        '<button class="btn" data-stems>REQUEST STEMS <span class="arrow">&rarr;</span></button>' +
       '</div>' +
     '</section>' +
 
-    // [03] REPERTORY GRID
+    // [03] REPERTORY GRID (4 COLUMNS)
     '<section class="section" id="repertory">' +
       '<div class="section-label">[03] // REPERTORY & DISCIPLINE GRID</div>' +
       '<div class="rep-grid">' +
         '<div class="rep-cell">' +
           '<div class="rep-num">01.</div>' +
           '<div class="rep-title">Vocal Mechanics</div>' +
-          '<div class="rep-desc">Agility exercises, chest / mix resonance drills, and cover stems. Dry-mic captures with zero processing.</div>' +
+          '<div class="rep-desc">Agility exercises, chest / mix resonance drills, and dry-mic cover stems. Captured with zero processing.</div>' +
         '</div>' +
         '<div class="rep-cell">' +
           '<div class="rep-num">02.</div>' +
@@ -38,13 +61,18 @@ function renderHub() {
         '</div>' +
         '<div class="rep-cell">' +
           '<div class="rep-num">03.</div>' +
-          '<div class="rep-title">Visual Direction</div>' +
-          '<div class="rep-desc">DaVinci Resolve color palettes, framing ratios, and low-key lighting setups. Applied to motion and performance captures.</div>' +
+          '<div class="rep-title">Visual &amp; Sonic Direction</div>' +
+          '<div class="rep-desc">DaVinci Resolve color palettes (deep blue, purple, dark red), low-key lighting setups, and original Sonic Lab production loops.</div>' +
+        '</div>' +
+        '<div class="rep-cell">' +
+          '<div class="rep-num">04.</div>' +
+          '<div class="rep-title">Sartorial Archive</div>' +
+          '<div class="rep-desc">Silhouette studies, thrift flips, custom graphic apparel, and monochrome/deep-palette capsule lookbooks. Wearable kinetic architecture.</div>' +
         '</div>' +
       '</div>' +
     '</section>' +
 
-    // [04] SATELLITE DISPATCH
+    // [04] SATELLITE DISPATCH (compact — full directory lives on #/channels)
     '<section class="section" id="dispatch">' +
       '<div class="section-label">[04] // SATELLITE DISPATCH</div>' +
       '<div class="sat-list">' +
@@ -66,6 +94,9 @@ function renderHub() {
           '<span class="sat-desc">Full-length choreography rehearsals and uncompressed audio archives.</span>' +
           '<span class="sat-arrow">&rarr;</span>' +
         '</a>' +
+      '</div>' +
+      '<div class="sat-foot">' +
+        '<a href="#/channels" class="sat-more">OPEN FULL DIRECTORY <span class="arrow">&rarr;</span></a>' +
       '</div>' +
     '</section>' +
 
@@ -92,6 +123,7 @@ function renderHub() {
     label: 'FEATURED CUT',
     meta:
       '<span class="meta-item">LOC: <span class="val">PRETORIA, ZA</span></span>' +
+      '<span class="meta-item">LOOK: <span class="val">ARCHIVE 01</span></span>' +
       '<span class="meta-item">DRILL: <span class="val">45s</span></span>' +
       '<span class="meta-item">SPRINT BPM: <span class="val">104</span></span>' +
       '<span class="meta-item">STATUS: <span class="val">OPERATIONAL</span></span>',
@@ -110,4 +142,7 @@ function renderHub() {
     registerCleanup(function () { p.destroy(); });
   });
 
+  // Stems modal trigger
+  var stemsBtn = app.querySelector('[data-stems]');
+  if (stemsBtn) stemsBtn.addEventListener('click', function () { openModal('modal-stems'); });
 }
