@@ -26,7 +26,7 @@ function renderVisuals() {
   ];
 
   var cardsHTML = frames.map(function(f) {
-    return createCard('assets/archive/entry-001/' + f.id + '.jpg', f.title, f.id, f.cat);
+    return createCard('assets/archive/entry-001/' + f.id + '.jpeg', f.title, f.id, f.cat);
   }).join('');
 
   app.innerHTML =

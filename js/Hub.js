@@ -80,9 +80,9 @@ function renderHub() {
       '<div class="archive-grid">' +
         
         // Frame 01
-        '<div class="archive-card" data-src="assets/archive/entry-001/01.jpg" data-title="SARTORIAL // Optical & Silhouette Study 01">' +
+        '<div class="archive-card" data-src="assets/archive/entry-001/01.jpeg" data-title="SARTORIAL // Optical & Silhouette Study 01">' +
           '<div class="archive-img-wrap">' +
-            '<img src="assets/archive/entry-001/01.jpg" alt="Optical & Silhouette Study 01" loading="lazy">' +
+            '<img src="assets/archive/entry-001/01.jpeg" alt="Optical & Silhouette Study 01" loading="lazy">' +
             '<div class="archive-reticle tl"></div><div class="archive-reticle tr"></div><div class="archive-reticle bl"></div><div class="archive-reticle br"></div>' +
             '<div class="archive-overlay"><span>FRM // 01</span><span>4:5 // RAW GRADE</span></div>' +
           '</div>' +
@@ -90,9 +90,9 @@ function renderHub() {
         '</div>' +
 
         // Frame 02
-        '<div class="archive-card" data-src="assets/archive/entry-001/02.jpg" data-title="MOVEMENT // Overhead Line & Kinetic Framing">' +
+        '<div class="archive-card" data-src="assets/archive/entry-001/02.jpeg" data-title="MOVEMENT // Overhead Line & Kinetic Framing">' +
           '<div class="archive-img-wrap">' +
-            '<img src="assets/archive/entry-001/02.jpg" alt="Overhead Line & Kinetic Framing" loading="lazy">' +
+            '<img src="assets/archive/entry-001/02.jpeg" alt="Overhead Line & Kinetic Framing" loading="lazy">' +
             '<div class="archive-reticle tl"></div><div class="archive-reticle tr"></div><div class="archive-reticle bl"></div><div class="archive-reticle br"></div>' +
             '<div class="archive-overlay"><span>FRM // 02</span><span>4:5 // RAW GRADE</span></div>' +
           '</div>' +
@@ -100,9 +100,9 @@ function renderHub() {
         '</div>' +
 
         // Frame 03
-        '<div class="archive-card" data-src="assets/archive/entry-001/03.jpg" data-title="DIRECTION // Three-Quarter Profile & Texture">' +
+        '<div class="archive-card" data-src="assets/archive/entry-001/03.jpeg" data-title="DIRECTION // Three-Quarter Profile & Texture">' +
           '<div class="archive-img-wrap">' +
-            '<img src="assets/archive/entry-001/03.jpg" alt="Three-Quarter Profile & Texture" loading="lazy">' +
+            '<img src="assets/archive/entry-001/03.jpeg" alt="Three-Quarter Profile & Texture" loading="lazy">' +
             '<div class="archive-reticle tl"></div><div class="archive-reticle tr"></div><div class="archive-reticle bl"></div><div class="archive-reticle br"></div>' +
             '<div class="archive-overlay"><span>FRM // 03</span><span>4:5 // RAW GRADE</span></div>' +
           '</div>' +
@@ -110,9 +110,9 @@ function renderHub() {
         '</div>' +
 
         // Frame 04
-        '<div class="archive-card" data-src="assets/archive/entry-001/04.jpg" data-title="SARTORIAL // Optical & Off-Duty Study 02">' +
+        '<div class="archive-card" data-src="assets/archive/entry-001/04.jpeg" data-title="SARTORIAL // Optical & Off-Duty Study 02">' +
           '<div class="archive-img-wrap">' +
-            '<img src="assets/archive/entry-001/04.jpg" alt="Optical & Off-Duty Study 02" loading="lazy">' +
+            '<img src="assets/archive/entry-001/04.jpeg" alt="Optical & Off-Duty Study 02" loading="lazy">' +
             '<div class="archive-reticle tl"></div><div class="archive-reticle tr"></div><div class="archive-reticle bl"></div><div class="archive-reticle br"></div>' +
             '<div class="archive-overlay"><span>FRM // 04</span><span>4:5 // RAW GRADE</span></div>' +
           '</div>' +
@@ -120,9 +120,9 @@ function renderHub() {
         '</div>' +
 
         // Frame 05
-        '<div class="archive-card" data-src="assets/archive/entry-001/05.jpg" data-title="VOCAL LAB // Studio Mood & Direct Gaze">' +
+        '<div class="archive-card" data-src="assets/archive/entry-001/05.jpeg" data-title="VOCAL LAB // Studio Mood & Direct Gaze">' +
           '<div class="archive-img-wrap">' +
-            '<img src="assets/archive/entry-001/05.jpg" alt="Studio Mood & Direct Gaze" loading="lazy">' +
+            '<img src="assets/archive/entry-001/05.jpeg" alt="Studio Mood & Direct Gaze" loading="lazy">' +
             '<div class="archive-reticle tl"></div><div class="archive-reticle tr"></div><div class="archive-reticle bl"></div><div class="archive-reticle br"></div>' +
             '<div class="archive-overlay"><span>FRM // 05</span><span>4:5 // RAW GRADE</span></div>' +
           '</div>' +
@@ -130,9 +130,9 @@ function renderHub() {
         '</div>' +
 
         // Frame 06
-        '<div class="archive-card" data-src="assets/archive/entry-001/06.jpg" data-title="UNFILTERED // Candid Motion Outtake">' +
+        '<div class="archive-card" data-src="assets/archive/entry-001/06.jpeg" data-title="UNFILTERED // Candid Motion Outtake">' +
           '<div class="archive-img-wrap">' +
-            '<img src="assets/archive/entry-001/06.jpg" alt="Candid Motion Outtake" loading="lazy">' +
+            '<img src="assets/archive/entry-001/06.jpeg" alt="Candid Motion Outtake" loading="lazy">' +
             '<div class="archive-reticle tl"></div><div class="archive-reticle tr"></div><div class="archive-reticle bl"></div><div class="archive-reticle br"></div>' +
             '<div class="archive-overlay"><span>FRM // 06</span><span>4:5 // RAW GRADE</span></div>' +
           '</div>' +
