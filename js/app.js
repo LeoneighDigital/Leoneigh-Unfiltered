@@ -53,6 +53,7 @@ var routes = {
   '/': renderHub,
   '/vocals': renderVocals,
   '/movement': renderMovement,
+  '/visuals': renderVisuals, // NEW ROUTE
   '/channels': renderChannels,
   '/inquiry': renderInquiry
 };

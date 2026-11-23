@@ -72,6 +72,79 @@ function renderHub() {
       '</div>' +
     '</section>' +
 
+    // [03.5] VISUAL & SARTORIAL ARCHIVE (NEW)
+    '<section class="section" id="visual-archive">' +
+      '<div class="section-label">[03.5] // VISUAL & SARTORIAL ARCHIVE</div>' +
+      '<div class="section-heading">ENTRY 001 // CONTACT SHEET</div>' +
+      '<div class="section-sub">BATCH: 2026.01 // LOC: PRETORIA, ZA // FRAMES: 06 // GRADE: COOL SLATE ARCHIVE</div>' +
+      '<div class="archive-grid">' +
+        
+        // Frame 01
+        '<div class="archive-card" data-src="assets/archive/entry-001/01.jpg" data-title="SARTORIAL // Optical & Silhouette Study 01">' +
+          '<div class="archive-img-wrap">' +
+            '<img src="assets/archive/entry-001/01.jpg" alt="Optical & Silhouette Study 01" loading="lazy">' +
+            '<div class="archive-reticle tl"></div><div class="archive-reticle tr"></div><div class="archive-reticle bl"></div><div class="archive-reticle br"></div>' +
+            '<div class="archive-overlay"><span>FRM // 01</span><span>4:5 // RAW GRADE</span></div>' +
+          '</div>' +
+          '<div class="archive-caption">SARTORIAL // Optical & Silhouette Study 01</div>' +
+        '</div>' +
+
+        // Frame 02
+        '<div class="archive-card" data-src="assets/archive/entry-001/02.jpg" data-title="MOVEMENT // Overhead Line & Kinetic Framing">' +
+          '<div class="archive-img-wrap">' +
+            '<img src="assets/archive/entry-001/02.jpg" alt="Overhead Line & Kinetic Framing" loading="lazy">' +
+            '<div class="archive-reticle tl"></div><div class="archive-reticle tr"></div><div class="archive-reticle bl"></div><div class="archive-reticle br"></div>' +
+            '<div class="archive-overlay"><span>FRM // 02</span><span>4:5 // RAW GRADE</span></div>' +
+          '</div>' +
+          '<div class="archive-caption">MOVEMENT // Overhead Line & Kinetic Framing</div>' +
+        '</div>' +
+
+        // Frame 03
+        '<div class="archive-card" data-src="assets/archive/entry-001/03.jpg" data-title="DIRECTION // Three-Quarter Profile & Texture">' +
+          '<div class="archive-img-wrap">' +
+            '<img src="assets/archive/entry-001/03.jpg" alt="Three-Quarter Profile & Texture" loading="lazy">' +
+            '<div class="archive-reticle tl"></div><div class="archive-reticle tr"></div><div class="archive-reticle bl"></div><div class="archive-reticle br"></div>' +
+            '<div class="archive-overlay"><span>FRM // 03</span><span>4:5 // RAW GRADE</span></div>' +
+          '</div>' +
+          '<div class="archive-caption">DIRECTION // Three-Quarter Profile & Texture</div>' +
+        '</div>' +
+
+        // Frame 04
+        '<div class="archive-card" data-src="assets/archive/entry-001/04.jpg" data-title="SARTORIAL // Optical & Off-Duty Study 02">' +
+          '<div class="archive-img-wrap">' +
+            '<img src="assets/archive/entry-001/04.jpg" alt="Optical & Off-Duty Study 02" loading="lazy">' +
+            '<div class="archive-reticle tl"></div><div class="archive-reticle tr"></div><div class="archive-reticle bl"></div><div class="archive-reticle br"></div>' +
+            '<div class="archive-overlay"><span>FRM // 04</span><span>4:5 // RAW GRADE</span></div>' +
+          '</div>' +
+          '<div class="archive-caption">SARTORIAL // Optical & Off-Duty Study 02</div>' +
+        '</div>' +
+
+        // Frame 05
+        '<div class="archive-card" data-src="assets/archive/entry-001/05.jpg" data-title="VOCAL LAB // Studio Mood & Direct Gaze">' +
+          '<div class="archive-img-wrap">' +
+            '<img src="assets/archive/entry-001/05.jpg" alt="Studio Mood & Direct Gaze" loading="lazy">' +
+            '<div class="archive-reticle tl"></div><div class="archive-reticle tr"></div><div class="archive-reticle bl"></div><div class="archive-reticle br"></div>' +
+            '<div class="archive-overlay"><span>FRM // 05</span><span>4:5 // RAW GRADE</span></div>' +
+          '</div>' +
+          '<div class="archive-caption">VOCAL LAB // Studio Mood & Direct Gaze</div>' +
+        '</div>' +
+
+        // Frame 06
+        '<div class="archive-card" data-src="assets/archive/entry-001/06.jpg" data-title="UNFILTERED // Candid Motion Outtake">' +
+          '<div class="archive-img-wrap">' +
+            '<img src="assets/archive/entry-001/06.jpg" alt="Candid Motion Outtake" loading="lazy">' +
+            '<div class="archive-reticle tl"></div><div class="archive-reticle tr"></div><div class="archive-reticle bl"></div><div class="archive-reticle br"></div>' +
+            '<div class="archive-overlay"><span>FRM // 06</span><span>4:5 // RAW GRADE</span></div>' +
+          '</div>' +
+          '<div class="archive-caption">UNFILTERED // Candid Motion Outtake</div>' +
+        '</div>' +
+
+      '</div>' +
+      '<div class="archive-action">' +
+        '<a href="#/visuals" class="btn">OPEN FULL VISUAL ARCHIVE <span class="arrow">&rarr;</span></a>' +
+      '</div>' +
+    '</section>' +
+
     // [04] SATELLITE DISPATCH (compact — full directory lives on #/channels)
     '<section class="section" id="dispatch">' +
       '<div class="section-label">[04] // SATELLITE DISPATCH</div>' +
