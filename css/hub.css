@@ -1,0 +1,93 @@
+/* ============================================================
+   REPERTORY GRID (4 COLUMNS DESKTOP)
+   ============================================================ */
+.rep-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--bd);
+  border: 1px solid var(--bd);
+}
+.rep-cell {
+  background: var(--s1);
+  padding: 24px 20px;
+  transition: background 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.rep-cell:hover { background: var(--s2); }
+.rep-num {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  color: var(--tx-d);
+  margin-bottom: 10px;
+}
+.rep-title {
+  font-size: 12px;
+  color: var(--tx-b);
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.rep-desc {
+  font-size: 10px;
+  color: var(--tx-m);
+  line-height: 1.75;
+  flex: 1;
+}
+
+/* ============================================================
+   SATELLITE DISPATCH (HUB COMPACT)
+   ============================================================ */
+.sat-list { display: flex; flex-direction: column; gap: 0; }
+.sat-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--bd);
+  transition: background 0.2s;
+}
+.sat-item:first-child { border-top: 1px solid var(--bd); }
+.sat-item:hover { background: var(--s2); }
+.sat-badge {
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  color: var(--tx-d);
+  border: 1px solid var(--bd2);
+  padding: 2px 6px;
+  min-width: 32px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.sat-name {
+  font-size: 11px;
+  color: var(--tx-b);
+  letter-spacing: 0.04em;
+  min-width: 80px;
+}
+.sat-desc {
+  font-size: 10px;
+  color: var(--tx-m);
+  flex: 1;
+}
+.sat-arrow {
+  color: var(--tx-d);
+  font-size: 10px;
+  transition: color 0.2s, transform 0.2s;
+}
+.sat-item:hover .sat-arrow { color: var(--tx-b); transform: translateX(2px); }
+.sat-foot { margin-top: 16px; }
+.sat-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  color: var(--tx-m);
+  border-bottom: 1px solid var(--bd2);
+  padding-bottom: 3px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.sat-more:hover { color: var(--tx-b); border-color: var(--accent); }
+

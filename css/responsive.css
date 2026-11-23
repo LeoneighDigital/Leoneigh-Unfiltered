@@ -1,0 +1,49 @@
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .rep-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 900px) {
+  :root { --pad: 20px; }
+  .header-inner { flex-wrap: wrap; height: auto; padding-top: 10px; padding-bottom: 10px; gap: 8px; }
+  .status-stamp { font-size: 9px; gap: 6px; }
+  .hide-sm { display: none; }
+  .sibling-link { font-size: 9px; }
+  .nav-inner { overflow-x: auto; scrollbar-width: none; }
+  .nav-inner::-webkit-scrollbar { display: none; }
+  .nav-system { display: none; }
+  .stem-main { flex-wrap: wrap; }
+  .stem-scrubber { max-width: none; order: 10; flex-basis: 100%; }
+  .stem-time { order: 11; flex-basis: 100%; text-align: left; }
+  .stem-meta-row { padding-left: 16px; }
+  .motion-grid { grid-template-columns: 1fr; }
+  .motion-cell.wide { grid-column: span 1; }
+}
+
+@media (max-width: 768px) {
+  .channel-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .rep-grid { grid-template-columns: 1fr; }
+  .section-hero { padding: 40px 0 36px; }
+  .hero { padding: 32px 20px; }
+  .hero-status { gap: 6px; margin-bottom: 24px; }
+  .hero-status .sep { display: none; }
+  .hero-status span { display: block; width: 100%; }
+  .hero-actions { flex-direction: column; }
+  .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
+  .channel-head { flex-wrap: wrap; }
+  .channel-tag { text-align: left; }
+}
+
+@media (max-width: 600px) {
+  body { font-size: 12px; }
+  .section { padding: 40px 0; }
+  .terminal-meta { gap: 8px; font-size: 8px; }
+  .status-stamp { font-size: 8px; gap: 5px; }
+  .sibling-link .arrow { display: none; }
+  .stem-dispatch { flex-direction: column; align-items: flex-start; }
+}

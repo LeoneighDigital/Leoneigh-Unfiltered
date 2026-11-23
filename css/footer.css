@@ -1,0 +1,51 @@
+/* ============================================================
+   LD BRIDGE / FOOTER
+   ============================================================ */
+.ld-bridge {
+  margin-top: 28px;
+  border: 1px solid var(--bd2);
+  padding: 20px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--s1);
+}
+.ld-bridge-label {
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--tx-m);
+}
+.ld-bridge-link {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--tx-b);
+  transition: color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.ld-bridge-link:hover { color: var(--tx-w); }
+.ld-bridge-link .arrow { color: var(--tx-d); }
+.ld-bridge-link .bracket { color: var(--tx-d); }
+
+#site-footer {
+  border-top: 1px solid var(--bd);
+  padding: 28px var(--pad);
+  max-width: var(--max);
+  margin: 0 auto;
+}
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  color: var(--tx-d);
+}
+.footer-inner a { transition: color 0.2s; }
+.footer-inner a:hover { color: var(--tx-b); }
+

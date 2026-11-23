@@ -1,0 +1,121 @@
+/* ============================================================
+   AUDIO / STEM ARCHIVE
+   ============================================================ */
+.stem-list { display: flex; flex-direction: column; gap: 0; }
+.stem-item {
+  border: 1px solid var(--bd);
+  border-bottom: none;
+  background: var(--s1);
+  transition: background 0.2s;
+}
+.stem-item:first-child { border-top: 1px solid var(--bd); }
+.stem-item:last-child { border-bottom: 1px solid var(--bd); }
+.stem-item:hover { background: var(--s2); }
+
+.stem-main {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+}
+.stem-play {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border: 1px solid var(--bd2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s;
+}
+.stem-play:hover { border-color: var(--accent-soft); }
+.stem-info { flex: 1; min-width: 0; }
+.stem-id {
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  color: var(--tx-d);
+  margin-bottom: 2px;
+}
+.stem-title {
+  font-size: 11px;
+  color: var(--tx-b);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.stem-scrubber {
+  flex: 1;
+  min-width: 80px;
+  max-width: 260px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.stem-scrubber-track {
+  width: 100%;
+  height: 2px;
+  background: var(--bd2);
+  position: relative;
+}
+.stem-scrubber-fill {
+  height: 100%;
+  background: var(--accent-soft);
+  width: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.stem-time {
+  font-size: 9px;
+  color: var(--tx-d);
+  letter-spacing: 0.04em;
+  min-width: 72px;
+  text-align: right;
+  flex-shrink: 0;
+}
+.stem-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0 16px 12px 62px;
+  font-size: 9px;
+  letter-spacing: 0.04em;
+  color: var(--tx-d);
+}
+.stem-meta-row .m-val { color: var(--tx-m); }
+
+/* Stem dispatch drawer */
+.stem-dispatch {
+  margin-top: 16px;
+  border: 1px solid var(--bd);
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--s1);
+}
+.stem-dispatch-text {
+  font-size: 10px;
+  color: var(--tx-m);
+  letter-spacing: 0.02em;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid var(--bd2);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--tx-b);
+  transition: border-color 0.2s, background 0.2s;
+  white-space: nowrap;
+}
+.btn:hover { border-color: var(--accent-soft); background: var(--s2); }
+.btn .arrow { color: var(--tx-d); }
+

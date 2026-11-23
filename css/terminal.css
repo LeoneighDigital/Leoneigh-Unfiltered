@@ -1,0 +1,167 @@
+/* ============================================================
+   SCREENING TERMINAL (VIDEO)
+   ============================================================ */
+.terminal {
+  position: relative;
+  background: var(--s1);
+  border: 1px solid var(--bd);
+  overflow: hidden;
+}
+.terminal-canvas-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--bg);
+  overflow: hidden;
+}
+.terminal-canvas-wrap canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.terminal-corner {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-color: var(--bd3);
+  border-style: solid;
+  border-width: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+.terminal-corner.tl { top: 10px; left: 10px; border-top-width: 1px; border-left-width: 1px; }
+.terminal-corner.tr { top: 10px; right: 10px; border-top-width: 1px; border-right-width: 1px; }
+.terminal-corner.bl { bottom: 10px; left: 10px; border-bottom-width: 1px; border-left-width: 1px; }
+.terminal-corner.br { bottom: 10px; right: 10px; border-bottom-width: 1px; border-right-width: 1px; }
+
+.terminal-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  pointer-events: none;
+}
+.terminal-overlay.hidden { display: none; }
+.terminal-play-large {
+  pointer-events: auto;
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(9,9,11,0.6);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+.terminal-play-large:hover {
+  border-color: rgba(255,255,255,0.35);
+  background: rgba(9,9,11,0.8);
+}
+.terminal-play-large .icon-play { margin-left: 3px; }
+
+.terminal-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: var(--s2);
+  border-top: 1px solid var(--bd);
+}
+.tc-btn {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.tc-btn:hover { border-color: var(--accent-soft); }
+.tc-progress {
+  flex: 1;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.tc-track {
+  width: 100%;
+  height: 2px;
+  background: var(--bd2);
+  position: relative;
+}
+.tc-fill {
+  height: 100%;
+  background: var(--accent-soft);
+  width: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: none;
+}
+.tc-time {
+  font-size: 9px;
+  letter-spacing: 0.04em;
+  color: var(--tx-d);
+  min-width: 80px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* Icons */
+.icon-play {
+  width: 0;
+  height: 0;
+  border-left: 8px solid var(--tx-b);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+.icon-pause {
+  width: 8px;
+  height: 10px;
+  border-left: 3px solid var(--tx-b);
+  border-right: 3px solid var(--tx-b);
+}
+.icon-fs {
+  width: 12px;
+  height: 12px;
+  position: relative;
+}
+.icon-fs::before, .icon-fs::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-color: var(--tx-b);
+  border-style: solid;
+}
+.icon-fs::before { top: 0; left: 0; border-width: 1px 0 0 1px; }
+.icon-fs::after { bottom: 0; right: 0; border-width: 0 1px 1px 0; }
+
+/* Terminal meta bar */
+.terminal-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 14px;
+  background: var(--s1);
+  border-top: 1px solid var(--bd);
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  color: var(--tx-d);
+}
+.terminal-meta .tag {
+  border: 1px solid var(--bd);
+  padding: 2px 6px;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+}
+.terminal-meta .meta-item { display: flex; align-items: center; gap: 6px; }
+.terminal-meta .meta-item .val { color: var(--tx-m); }
+

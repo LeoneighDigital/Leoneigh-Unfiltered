@@ -1,0 +1,17 @@
+/* ============================================================
+   VOCALS PAGE
+   ============================================================ */
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.tag-row .tag {
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  border: 1px solid var(--bd2);
+  padding: 3px 8px;
+  color: var(--tx-m);
+}
+
