@@ -56,19 +56,6 @@ function renderChannels() {
           '<p class="channel-desc">Raw rehearsal clips, micro-drills, cultural commentary hooks, and work-in-progress Sonic Lab loops.</p>' +
           '<a href="https://www.tiktok.com/@leoneigh.unfilter" class="channel-action" target="_blank" rel="noopener noreferrer">OPEN NODE &#8599;</a>' +
         '</article>' +
-
-        // [TT-02] TikTok — Archive / Dump Node
-        // TODO: insert the actual archive / dump-node TikTok URL below
-        '<article class="channel-card">' +
-          '<div class="channel-head">' +
-            '<span class="channel-badge">[TT-02]</span>' +
-            '<span class="channel-tag">SANDBOX // SKETCHPAD</span>' +
-          '</div>' +
-          '<h3 class="channel-name">TikTok &mdash; Archive <span class="channel-handle">/ Dump Node</span></h3>' +
-          '<p class="channel-desc">Unfiltered thoughts, rough audio/movement drafts, and spontaneous off-the-cuff creative logs.</p>' +
-          '<a href="https://www.tiktok.com/" class="channel-action" target="_blank" rel="noopener noreferrer">OPEN NODE &#8599;</a>' +
-        '</article>' +
-
       '</div>' +
     '</section>' +
 
