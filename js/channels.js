@@ -11,7 +11,6 @@ function renderChannels() {
       '<div class="channel-grid">' +
 
         // [YT] YouTube — PRIMARY BROADCAST
-        // TODO: swap href for the finalized canonical YouTube channel URL
         '<article class="channel-card">' +
           '<div class="channel-head">' +
             '<span class="channel-badge">[YT]</span>' +
@@ -23,7 +22,6 @@ function renderChannels() {
         '</article>' +
 
         // [IG] Instagram — VISUAL CATALOG
-        // TODO: swap href for the finalized canonical Instagram URL
         '<article class="channel-card">' +
           '<div class="channel-head">' +
             '<span class="channel-badge">[IG]</span>' +
@@ -46,7 +44,6 @@ function renderChannels() {
         '</article>' +
 
         // [TT] TikTok — Main
-        // TODO: swap href for the finalized canonical TikTok main account URL
         '<article class="channel-card">' +
           '<div class="channel-head">' +
             '<span class="channel-badge">[TT]</span>' +
@@ -56,6 +53,7 @@ function renderChannels() {
           '<p class="channel-desc">Raw rehearsal clips, micro-drills, cultural commentary hooks, and work-in-progress Sonic Lab loops.</p>' +
           '<a href="https://www.tiktok.com/@leoneigh.unfilter" class="channel-action" target="_blank" rel="noopener noreferrer">OPEN NODE &#8599;</a>' +
         '</article>' +
+
       '</div>' +
     '</section>' +
 
