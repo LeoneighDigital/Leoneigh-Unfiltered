@@ -41,9 +41,22 @@ All pages are rendered client-side. The application shell, header, navigation, f
 ```
 /
 ├── index.html
-├── style.css
 ├── assets/
 │   └── LeoneighUnfiltered.jpg
+├── css/
+│   ├── base.css                 Shared reset, tokens, and scrollbars
+│   ├── layout.css               Header, navigation, main, and section shell
+│   ├── hero.css                 Hub hero and system initialization
+│   ├── terminal.css             Screening terminal and motion controls
+│   ├── audio.css                Stem archive and dispatch
+│   ├── hub.css                  Repertory and satellite dispatch
+│   ├── channels.css             Channels page
+│   ├── inquiry.css              Inquiry form
+│   ├── footer.css               Bridge and site footer
+│   ├── modal.css                Stem dispatch modal
+│   ├── movement.css             Movement page
+│   ├── vocals.css               Vocals page
+│   └── responsive.css           Breakpoints
 └── js/
     ├── app.js                    Utilities, shared audio context, router
     ├── audiotrackdefinitions.js  Track data and generated note sequences
